@@ -1,0 +1,81 @@
+.bottle-table {
+  width: 100%;
+  margin: 2rem 0;
+
+  &__title {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+  }
+
+  &__empty {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 2rem;
+    border-radius: 4px;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &__header {
+    background-color: #f8f9fa;
+  }
+
+  &__row {
+    border-bottom: 1px solid #dee2e6;
+
+    &--header {
+      background-color: #e9ecef;
+    }
+
+    // hover effect for data rows (not header)
+    &:not(&--header):hover {
+      background-color: #f8f9fa;
+    }
+  }
+
+  &__cell {
+    padding: 0.75rem;
+    text-align: left;
+    border-right: 1px solid #dee2e6;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &--header {
+      font-weight: bold;
+      color: #495057;
+      background-color: #e9ecef;
+    }
+
+    &--type {
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+
+    &--deposit {
+      text-align: right;
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    &--barcode {
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    &--date {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  }
+}

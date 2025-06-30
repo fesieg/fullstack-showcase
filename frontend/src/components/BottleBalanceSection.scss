@@ -1,0 +1,52 @@
+.balance-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &__value {
+    font-size: 1.3rem;
+    color: #333;
+
+    strong {
+      color: #28a745;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__redeem-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.2);
+
+    &:hover:not(:disabled) {
+      background-color: #218838;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+    }
+
+    &:active:not(:disabled) {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(40, 167, 69, 0.2);
+    }
+
+    &:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+      box-shadow: none;
+      opacity: 0.6;
+    }
+  }
+}

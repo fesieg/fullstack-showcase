@@ -1,0 +1,50 @@
+[project]
+name = "bottle_return_system_backend"
+version = "1.0.0"
+description = "FastAPI backend for the Bottle Return System"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.14",
+    "uvicorn>=0.34.3",
+    "pydantic>=2.11.6",
+    "pydantic-settings>=2.0.0"
+    ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.1",
+    "pre-commit>=4.0.0",
+]
+
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "httpx>=0.24.0",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+  "ALL"
+]
+ignore = [
+  "D100",
+  "D101",
+  "D104",
+  "D103",
+  "D203",
+  "D212",
+  "COM812",
+  "DTZ005", 
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "S101",    # Use of assert detected
+    "PLR2004", # Magic value used in comparison
+    "D",       # All docstring checks
+    "ANN",     # All type annotation checks for tests
+]

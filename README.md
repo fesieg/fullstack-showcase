@@ -26,6 +26,13 @@ This is a full-stack showcase project for a bottle return/refund system, built w
   uv sync  # or: uv pip install -e .
   ./scripts/start-dev.sh  # or: uvicorn app.main:app --reload
   ```
+
+  or
+
+  ```
+  cd backend
+  docker compose up
+  ```
 - The API will be available at http://localhost:8000
 - API docs: http://localhost:8000/docs
 

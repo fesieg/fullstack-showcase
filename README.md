@@ -1,12 +1,12 @@
 # Bottle Deposit System – 5-Hour Showcase Project
 
 **Features:**
-- FastAPI backend with SQLite (no ORM), CORS, logging, and rate limiting
+- FastAPI backend with SQLite, CORS, logging, and rate limiting
 - React + TypeScript frontend with SCSS and BEM methodology
-- API key authentication and barcode uniqueness validation
+- (limited) API key authentication and barcode uniqueness validation
 - Docker & Docker Compose support for easy deployment
 - Pytest and frontend smoke tests included
-- Clean project structure and clear documentation
+- Clean project structure and documentation
 - Conventional commits
 
 This is a full-stack showcase project for a bottle return/refund system, built with FastAPI (Python) for the backend and React (TypeScript) for the frontend. No ORM, no component framework.
